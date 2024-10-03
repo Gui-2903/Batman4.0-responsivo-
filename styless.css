@@ -1,0 +1,348 @@
+/* Importa a fonte Chakra Petch do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+body {
+    font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    background-image:  url('https://wallpapers.com/images/hd/2560-x-1440-batman-ep7on10owhq2t1h5.jpg');
+    background-size: cover;
+    background-repeat: inherit;
+    background-position: center;
+    height: 91vh;
+    
+    
+}
+main{
+  position: relative;
+  width: 63vw;
+  height: auto;
+  top: 33%;
+  @media (max-width: 630px) {
+    width: 77vw;
+}
+  
+}
+p{ 
+  color: aliceblue;
+  margin: 0px;
+  text-align: center;
+}
+h1{
+  margin: 0%;
+  
+}
+
+
+.footer {
+  background-color: #1b526e53;
+  color: #45474B;
+  text-align: center;
+  padding: 10px 0; /* Adicione padding para criar espaço interno */
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  min-height: 50px; /* Ajuste a altura mínima conforme necessário */
+  border-top: 1px solid #dddddd91; /* Borda fina e adaptável */
+  box-sizing: border-box; 
+  
+}
+.centroPagina{
+  
+    position: relative;
+    width: 70%;
+    height: auto;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pesquisar{
+  position: relative;
+  top: 12%;
+  left: 50%;
+  width: 60%; /* Ocupa 100% da largura do container pai */
+  height: 15%;
+  box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+  padding:2ch;
+  transform: translateX(-50%) translateY(-50%);
+  margin-bottom: 0px;
+  text-align: center;
+  border-radius: 5rem; /* Borda arredondada */
+  font-size:  99%; /* Tamanho da fonte */
+  color: #000000;
+  @media (max-width: 700px) {
+    width: 80%;
+}
+}
+.botaoGo{
+    position: relative;
+    top: 13%;
+    width: 13%;
+    left: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    border: none;
+    border-radius: 1.5rem;
+    background-color: #30475E;
+    color: #80b7d2;
+    font-size: 1vw;
+    cursor: pointer;
+    @media (max-width: 900px) {
+        font-size: 2vw;
+        width: 20%;
+    }
+  
+  
+}
+#botaoGo:hover {
+  /* Estilo quando o mouse passa por cima */
+  animation: infinite 5s; 
+  box-shadow: 5px 5px 20px rgba(136, 135, 163, 0.452);
+}
+
+.logoBat{
+  position: relative;
+  width: 4vw;
+  margin: 0 auto;
+  bottom: 5%;
+  transition: 1s;
+  filter: invert(80%);
+  opacity: 0.5;
+  animation: pulse 10s infinite;
+  @media (max-width: 1000px) {
+    width: 6vw;
+}
+  
+}
+@keyframes pulse {
+  0%{transform: scale(1);}
+  40%{transform: scale(2);}
+  65%{transform: scale(3.5);}
+  100%{transform: scale(1);}
+}
+.logosBat{
+  position: relative;
+  top: 5%;
+  height: 42%;
+  justify-content: center;
+  display: flex;
+  gap: 25%;
+}
+ 
+
+.BatL{
+  position: relative;
+  height: 3vw;
+  background-color: aliceblue;
+  border-radius: 50%;
+  cursor: pointer;
+  @media (max-width: 1300px) {
+    height: 5vw;
+    @media (max-width: 620px) {
+      height: 7vw;
+  }
+}
+}
+.LogoEdata {
+  position: relative;
+  height: 90%;
+  top: 40%;
+  /* Estilos para quando o mouse passar por cima */
+  transition: transform 1.3s;
+  transform-origin: center center;
+  &:hover{
+         
+    transform: scale(1.3); /* Aumenta em 10% */
+  }
+  .BatL{
+    background-color: #338cb8d7;
+  }
+}
+
+.nBat {
+  position: relative;
+  margin: 0 auto;
+  bottom: 10%;
+  font-size: 5vw;
+  color: #ffffff5f; /* Cor do texto */
+  text-align: center; /* Alinha o texto ao centro */
+  letter-spacing: 1.3rem; /* Espaçamento entre letras */
+  @media (max-width: 1000px) {
+    font-size: 8vw;
+    @media (max-width: 650px) {
+      font-size: 10vw;
+  }
+}
+  
+}
+.divNbat{
+    height: auto;
+}
+
+
+.item-resultado{
+  position: relative;
+    background-color: #4e89a7;
+    border-radius: 33px;
+    width: 95%;
+    margin-bottom: 20px;
+    border: 50px;
+    display: flex;
+    transform: translateX(0%);
+    transition: transform 0.3s;
+    animation: aparecer 1s ease-in-out;
+    align-items: center;
+  
+  
+}
+.item-resultado:hover {
+  /* Estilos para quando o mouse passar por cima */
+  
+  transform: scale(1.07); /* Aumenta em 10% */
+  transform-origin: center center;
+  background-color: #3e95c1ee;
+}
+@keyframes aparecer {
+  from {
+    opacity: 0.7;
+    transform: translateY(90%);
+  }
+  to {
+    opacity: 10;
+    transform: translateY(0);
+  }
+}
+.resultados-pesquisa{
+    position: relative;
+    width: auto;
+    height: auto;
+    margin-top: 7vw;
+    padding-bottom: 10vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: opacity 0.5s ease-in-out;
+    
+    
+        @media (max-width: 690px) {
+            padding-bottom: 23vw;
+
+        }
+    
+}
+
+.imgbat{
+  
+  position: relative;
+  width: 25%;
+  margin: 7%;  
+  border-radius: 10%;
+  @media (max-width: 800px) {
+    width: 33%;
+    margin: 5%;
+}
+}
+.linkA{
+  text-decoration: none;
+}
+
+.texto{
+  position: relative;
+  width: 60%;
+  margin: 5%;
+  height: auto;
+  text-align: center;
+  
+}
+.descricao{
+  position: relative;
+  top: 5%;
+  margin: 0px;
+  font-size: 1vw;
+  color: #11141d;
+  @media (max-width: 1140px) {
+    font-size: 1.6vw;
+    @media (max-width:620px) {
+      font-size: 2vw;
+  }
+}
+ }
+ .nomeF{
+  position: relative;
+  margin: 0px;
+  font-size: 2.5vw;
+  color: #1d2746b8;
+  text-decoration: double;
+  @media (max-width: 900px) {
+    font-size: 3vw;
+    @media (max-width: 600px) {
+      font-size: 3.5vw;
+  }
+}
+ }
+.botaoVoltar{
+  position: fixed;
+  width: 4%;
+  left: 92%;
+  top: 80%;
+  cursor: pointer;
+  display: none;
+  
+  transition: transform 1.2s;
+  transform-origin: center center;
+  &:hover{
+         
+    transform: scale(1.2); /* Aumenta em 10% */
+  }
+  @media (max-width: 1000px) {
+    width: 6%;
+    left: 90%;
+    @media (max-width: 550px) {
+      width: 8%;
+      left: 89%;
+  }
+}
+}
+
+@keyframes fadeIn {
+  50% {
+    opacity: 1; /* Inicialmente, o botão é invisível */
+  }
+  100% {
+    opacity: 1; /* No final, o botão é visível */
+  }
+  from {
+    
+    transform: translateX(50%);
+  }
+  to {
+    
+    transform: translateX(0);
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1; /* Inicialmente, o botão é visível */
+  }
+  100% {
+    opacity: 0;
+    
+  }
+  from {
+    
+    transform: translateX(0%);
+  }
+  to {
+    
+    transform: translateX(50%);
+  }
+   /* No final, o botão é invisível */
+
+}
+
