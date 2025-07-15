@@ -1,6 +1,5 @@
 # Batima - Pesquisa de Filmes
 
-![Batima Logo](https://via.placeholder.com/150) <!-- Substitua pelo link da imagem do logo do seu projeto -->
 
 ## Descrição
 
