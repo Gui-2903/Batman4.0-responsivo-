@@ -1,4 +1,4 @@
-
+//simulacao de um BD:
 let dados = [
     //Fase Clássica: A Era de Ouro e Prata
 [
@@ -35,7 +35,7 @@ let dados = [
     {
         nome: "Batman Eternamente (1995)",
         ator:"Terceiro filme da saga de Tim Burton, mas com uma direção mais colorida e menos sombria. Val Kilmer assume o papel de Batman.",
-        data:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNw914Svs764x9tSKjE4MagdjhZuk2L4MFgg&s" ,
+        data:"https://recreio.com.br/wp-content/uploads/dc_comics/batman_animacao_capa.jpg" ,
     },
     {
         nome: "Batman & Robin (1997)",
@@ -49,7 +49,7 @@ let dados = [
     {
         nome: "Batman Begins (2005)",
         ator:"Dirigido por Christopher Nolan, este filme reinventa a origem de Batman, com Christian Bale no papel principal. A trama explora a psicologia de Bruce Wayne e a criação de sua persona de vigilante.",
-        data: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNw914Svs764x9tSKjE4MagdjhZuk2L4MFgg&s",
+        data: "https://i.pinimg.com/736x/ae/f0/71/aef071231bd62d309b805335654089e7.jpg",
     },
     {
         nome: "O Cavaleiro das Trevas (2008)",
